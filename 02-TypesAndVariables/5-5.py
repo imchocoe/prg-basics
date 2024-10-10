@@ -1,0 +1,5 @@
+price=float(input('price:',))
+dsc=int(input('discount:',))
+red=round(price*(dsc/100),2)
+dsc_price=round(price-red,2)
+print(f'if the price is {price} and the discount is {dsc} the discounted price is {dsc_price} and reduction is {red}')
