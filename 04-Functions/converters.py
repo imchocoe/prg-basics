@@ -14,9 +14,9 @@ def feet_to_cm(n):
 
 if __name__ == "__main__":
     # only execute when you run this module
+    # so you can test the functions in this place
     print(f'2m = {m_to_cm(2)}cm')
     print(f'532cm = {cm_to_m(532)}m')
     print(f"576cm={cm_to_inches(576)}in")
     print(f"32.5feet={feet_to_cm(32.5)}cm")
 
-    
