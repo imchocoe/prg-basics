@@ -18,13 +18,38 @@ def weekday(n):
 # Returns a string with day meal names
 # separated by comma
 def day_meal_plan(meal_plan, day_number):
-   if day_number=
-   for row in meal_plan:
-    
-   return ...
+   plan=""
+   if day_number==1:
+      plan=meal_plan[0][0:]
+   elif day_number==2:
+      plan=meal_plan[1][0:]
+   elif day_number==3:
+      plan=meal_plan[2][0:]
+   elif day_number==4:
+      plan=meal_plan[3][0:]
+   elif day_number==5:
+      plan=meal_plan[4][0:]
+   elif day_number==6:
+      plan=meal_plan[5][0:]
+   elif day_number==7:
+      plan=meal_plan[6][0:]
+   return plan
 
 
 print('WEEKLY MEAL PLAN')
 print('(Breakfast, Lunch, Dinner)')
 print('==========================')
-print()
+print(weekday(1))
+print(day_meal_plan(meal_plan,1))
+print(weekday(2))
+print(day_meal_plan(meal_plan,2))
+print(weekday(3))
+print(day_meal_plan(meal_plan,3))
+print(weekday(4))
+print(day_meal_plan(meal_plan,4))
+print(weekday(5))
+print(day_meal_plan(meal_plan,5))
+print(weekday(6))
+print(day_meal_plan(meal_plan,6))
+print(weekday(7))
+print(day_meal_plan(meal_plan,7))
