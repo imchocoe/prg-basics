@@ -8,13 +8,17 @@ while i<len(arr):
     while j<len(arr)-1:
         if arr[i]==arr[j] or arr[i]=='a':
             sum+=1
-            arr[j]='a'
+            if arr[i]!='a':
+                arr[j]='a'
             break
         j+=1
     
     if sum==0 :
         arr1.append(arr[i])
     i+=1
+arr1.remove(arr1[len(arr1)-1])
+arr1.remove(arr1[len(arr1)-1])
+
     
 print(arr1)
     
